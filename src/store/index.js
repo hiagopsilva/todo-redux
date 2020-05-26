@@ -1,14 +1,15 @@
 import { createStore } from 'redux';
 
 const INITIAL_STATE = {
-  DATA: [
+  data: [
     'shopping',
     'study',
-    'travel'
+    'travel',
+    'tidy up the house'
   ]
 }
 
-function todos(state, action) {
+function todos(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'ADD_TODO':
       return { ...state, data: [ ...state.data, action.title] };
