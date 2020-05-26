@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
 function addTodoAction(title) {
@@ -8,10 +8,14 @@ function addTodoAction(title) {
 export default function TodoList() {
   const todos = useSelector(state => state.data);
   const dispatch = useDispatch();
+  
+  const [newTodo, setNewTodo] = useState();
 
   function addTodo() {
-    dispatch(addTodoAction('sleep')) 
+    dispatch(addTodoAction(newTodo));
+    setNewTodo('');
   }
+  
 
   return (
     <>
@@ -19,7 +23,10 @@ export default function TodoList() {
       { todos.map(todo => <li key={todo}>{todo}</li>) }
     </ul>
 
-    <button type="button" onClick={addTodo}>Add todo</button>
+    <form>
+      <input placeholder="add a new todo"  value={newTodo} onChange={e => setNewTodo(e.target.value)} />
+      <button type="button" onClick={addTodo}>Add todo</button>
+    </form>
     </>
   )
 }
