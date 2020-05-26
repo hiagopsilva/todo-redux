@@ -8,15 +8,15 @@ const INITIAL_STATE = {
   ]
 }
 
-function courses(state, action) {
+function todos(state, action) {
   switch (action.type) {
-    case 'ADD_COURSE':
+    case 'ADD_TODO':
       return { ...state, data: [ ...state.data, action.title] };
     default:
       return state;
   }
 };
 
-const store = createStore({courses});
+const store = createStore({todos});
 
 export default store;
