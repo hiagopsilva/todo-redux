@@ -1,0 +1,13 @@
+div.container {
+  background-color: #1111F2;
+  height: 60px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+div.container h1 {
+  color: #FFF;
+  font-size: 28px;
+}

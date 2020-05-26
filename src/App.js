@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
-import './global.css';
+import './styles/global.css';
 
 import TodoList from './components/TodoList';
 import Header from './components/Header';
