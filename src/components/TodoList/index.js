@@ -6,6 +6,6 @@ export default function TodoList() {
       <li>Shopping</li>
       <li>travel</li>
     </ul>
-  )<li>
+  )
 }
 

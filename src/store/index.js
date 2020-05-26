@@ -17,6 +17,6 @@ function todos(state, action) {
   }
 };
 
-const store = createStore({todos});
+const store = createStore(todos);
 
 export default store;
