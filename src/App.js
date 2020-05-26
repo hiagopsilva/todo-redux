@@ -3,13 +3,19 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
+import './global.css';
+
 import TodoList from './components/TodoList';
+import Header from './components/Header';
 
 function App() {
   return (
-    <Provider store={store}>
-      <TodoList />
-    </Provider>    
+    <>
+      <Header />
+      <Provider store={store}>
+        <TodoList />
+      </Provider>
+    </>    
   );
 }
 
