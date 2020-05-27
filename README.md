@@ -5,6 +5,15 @@
 
 > a simple todoapp with redux
 
+![gif (5)](https://user-images.githubusercontent.com/47197695/82980581-2fa37480-9fc0-11ea-9d1d-327fa88d5594.gif)
+
+## Dependencies 
+* react-dom
+* react-icons
+* react-redux
+* react-scripts
+* redux
+
 ## Install
 
 ```sh
