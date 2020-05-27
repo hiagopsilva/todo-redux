@@ -2,10 +2,9 @@ import { createStore } from 'redux';
 
 const INITIAL_STATE = {
   data: [
-    'shopping',
-    'study',
-    'travel',
-    'tidy up the house'
+    'Ir ao shopping',
+    'Estudar',
+    'Viajar',
   ]
 }
 
